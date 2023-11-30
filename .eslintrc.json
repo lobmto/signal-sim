@@ -1,0 +1,31 @@
+{
+    "env": {
+        "browser": false,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": "standard-with-typescript",
+    "plugins": [
+        "unused-imports"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "space-before-function-paren": [
+            "error",
+            "always"
+        ],
+        "unused-imports/no-unused-imports": "error",
+        "import/order": [
+            "error",
+            {
+                "newlines-between": "always",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                }
+            }
+        ]
+    }
+}

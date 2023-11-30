@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "mhutchie.git-graph",
+        "orta.vscode-jest",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}
