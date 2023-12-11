@@ -75,7 +75,7 @@ describe('TrainService', () => {
     jest.spyOn(sim, 'findOppositePathOf').mockReturnValueOnce(paths[2])
     // use actual implement
     jest.spyOn(sim, 'getDeltaTimeInSeconds')
-      .mockImplementation(jest.requireActual('../simulator').Simulator.prototype.getDeltaTimeInSeconds)
+      .mockImplementation(jest.requireActual('../simulator').Simulator.prototype.getDeltaTimeInSeconds as () => number)
   })
 
   describe('moveTrain()', () => {
